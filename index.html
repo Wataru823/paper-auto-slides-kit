@@ -8,7 +8,10 @@
 <meta property="og:description" content="論文1本を8枚の日本語スライドに落とすための、依存なしHTMLスライドキット。">
 <link rel="stylesheet" href="css/deck.css">
 <style>
-  body.landing { overflow: auto; height: auto; min-height: 100%; background: var(--slide-bg); }
+  /* deck.css locks scrolling for the fixed 1920x1080 stage; the landing page
+     must release it on the html element, which is what actually scrolls. */
+  html:has(body.landing) { overflow: auto; height: auto; }
+  body.landing { overflow: visible; height: auto; min-height: 100%; background: var(--slide-bg); }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 96px 32px 120px; }
   .kicker { font-family: var(--font-latin); font-size: 14px; font-weight: 700; letter-spacing: .2em;
             text-transform: uppercase; color: var(--accent-ink); }
