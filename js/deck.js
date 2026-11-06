@@ -1,4 +1,4 @@
-/* PaperGaki deck runtime — fixed 16:9 stage, keyboard/touch navigation. */
+/* Paper Auto Slides deck runtime — fixed 16:9 stage, keyboard/touch navigation. */
 (function () {
   "use strict";
 

@@ -1,4 +1,4 @@
-# PaperGaki Slides Kit
+# Paper Auto Slides Kit
 
 論文1本を、**8枚の日本語スライド**に落とすための最小キット。
 依存パッケージなし・ビルドなし。HTML を開けばそのまま発表できます。
@@ -16,8 +16,8 @@ examples/index.html   ← デモ（このキット自身の説明スライド）
 ## クイックスタート
 
 ```bash
-git clone https://github.com/Wataru823/papergaki-slides-kit.git
-cd papergaki-slides-kit
+git clone https://github.com/Wataru823/paper-auto-slides-kit.git
+cd paper-auto-slides-kit
 python3 kit.py examples/spec.json examples/index.html
 open examples/index.html
 ```
@@ -28,7 +28,7 @@ open examples/index.html
 
 ```jsonc
 {
-  "brand": "PaperGaki Slides Kit",
+  "brand": "Paper Auto Slides Kit",
   "cover": {
     "kicker": "PAPERGAKI · SLIDES KIT",
     "title": "読ませず、**見せる**スライド",   // **強調** だけ使える

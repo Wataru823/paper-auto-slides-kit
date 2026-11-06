@@ -1,6 +1,6 @@
 {
-  "page_title": "伝わるスライドの作り方 — PaperGaki Slides Kit",
-  "brand": "PaperGaki Slides Kit",
+  "page_title": "伝わるスライドの作り方 — Paper Auto Slides Kit",
+  "brand": "Paper Auto Slides Kit",
   "cover": {
     "kicker": "PAPERGAKI · SLIDES KIT",
     "title": "読ませず、**見せる**スライド",
@@ -138,7 +138,7 @@
   "links": [
     {
       "label": "Repo",
-      "url": "https://github.com/Wataru823/papergaki-slides-kit",
+      "url": "https://github.com/Wataru823/paper-auto-slides-kit",
       "text": "このキット"
     },
     {
