@@ -1,0 +1,160 @@
+{
+  "page_title": "伝わるスライドの作り方 — PaperGaki Slides Kit",
+  "brand": "PaperGaki Slides Kit",
+  "cover": {
+    "kicker": "PAPERGAKI · SLIDES KIT",
+    "title": "読ませず、**見せる**スライド",
+    "lead": "論文1本を8枚に圧縮するときに効いた、レイアウトと情報量の決めごと。",
+    "subtitle": "HTML 1枚で完結するスライドキットの設計メモ",
+    "chips": [
+      "1920×1080 固定",
+      "依存なし",
+      "日本語"
+    ],
+    "image": "../docs/example-results.jpg"
+  },
+  "slides": [
+    {
+      "type": "problem",
+      "section": "The Problem",
+      "title": "研究スライドは情報過多になりがち",
+      "claim": "つまり、詰め込むほど読まれなくなる",
+      "bullets": [
+        "1枚に箇条書きを6〜8個並べてしまう",
+        "図が小さく、何の図か分からないまま置かれる",
+        "スライドごとに余白と文字サイズがばらつく"
+      ],
+      "note": "発表要旨をそのまま貼ると、たいていこの形になる。"
+    },
+    {
+      "type": "idea",
+      "section": "Key Idea",
+      "title": "1スライド1メッセージ",
+      "claim": "**言いたいことは1つ**に絞る",
+      "statement": "スライドは「読む資料」ではなく「見る資料」。1枚で1つの主張だけを持つ。",
+      "bullets": [
+        "箇条書きは3項目まで、各40文字以内",
+        "タイトル直下に結論を1文で置く",
+        "溢れたらスライドを分ける（縮めない）"
+      ]
+    },
+    {
+      "type": "method",
+      "section": "Method",
+      "title": "作り方は4ステップ",
+      "claim": "型に流し込むと迷わない",
+      "steps": [
+        {
+          "label": "主張を決める",
+          "text": "この1枚で何を言うかを先に決める"
+        },
+        {
+          "label": "材料を選ぶ",
+          "text": "図・表・動画のどれか1つを必ず入れる"
+        },
+        {
+          "label": "型に流す",
+          "text": "見出し・本文・締めの一文の位置は固定"
+        },
+        {
+          "label": "溢れを直す",
+          "text": "はみ出したら削るか、2枚に分ける"
+        }
+      ],
+      "media": {
+        "kind": "image",
+        "src": "../docs/layout-anatomy.png"
+      }
+    },
+    {
+      "type": "results",
+      "section": "Results",
+      "title": "どこが変わったか",
+      "claim": "詰め込みをやめたら、伝わるようになった",
+      "stats": [
+        {
+          "value": "3",
+          "label": "1枚あたりの箇条書き"
+        },
+        {
+          "value": "1",
+          "label": "1枚あたりの主張"
+        },
+        {
+          "value": "1920×1080",
+          "label": "固定キャンバス"
+        }
+      ],
+      "table": {
+        "headers": [
+          "項目",
+          "Before",
+          "After"
+        ],
+        "rows": [
+          [
+            "箇条書きの数",
+            "6〜8",
+            "3"
+          ],
+          [
+            "図の数",
+            "0〜1（小さい）",
+            "1（必ず）"
+          ],
+          [
+            "文字サイズ",
+            "バラバラ",
+            "固定"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "limits",
+      "section": "Limitations",
+      "title": "このキットの限界",
+      "claim": "向かない用途もある",
+      "bullets": [
+        "1枚に大量の情報を載せる読む資料には向かない",
+        "縦長の動画や極端に横長の図は余白が残りやすい",
+        "数式の組版は苦手（画像にするのが早い）"
+      ]
+    },
+    {
+      "type": "takeaway",
+      "section": "Why It Matters",
+      "title": "使いどころ",
+      "claim": "まずは1本、通しで作ってみる",
+      "bullets": [
+        "研究室の輪読・進捗報告・学会発表の下書き",
+        "LLM に仕様を書かせれば、量産もできる",
+        "CSS を差し替えれば見た目はいくらでも変えられる"
+      ]
+    }
+  ],
+  "links_title": "参考資料",
+  "links_claim": "元になった考え方と実装。",
+  "links": [
+    {
+      "label": "Repo",
+      "url": "https://github.com/Wataru823/papergaki-slides-kit",
+      "text": "このキット"
+    },
+    {
+      "label": "Guide",
+      "url": "https://student.tsutawarudesign.com/powerpoint_slide/",
+      "text": "伝わるデザイン"
+    },
+    {
+      "label": "Reference",
+      "url": "https://github.com/zarazhangrui/frontend-slides",
+      "text": "frontend-slides"
+    },
+    {
+      "label": "Live",
+      "url": "https://wataru823.github.io/papergaki-slides/",
+      "text": "実用例（論文スライド）"
+    }
+  ]
+}

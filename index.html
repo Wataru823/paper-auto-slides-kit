@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PaperGaki Slides Kit — 読ませず、見せるスライド</title>
+<meta property="og:title" content="PaperGaki Slides Kit">
+<meta property="og:description" content="論文1本を8枚の日本語スライドに落とすための、依存なしHTMLスライドキット。">
+<link rel="stylesheet" href="css/deck.css">
+<style>
+  body.landing { overflow: auto; height: auto; min-height: 100%; background: var(--slide-bg); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 96px 32px 120px; }
+  .kicker { font-family: var(--font-latin); font-size: 14px; font-weight: 700; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--accent-ink); }
+  h1 { margin: 18px 0 20px; font-size: clamp(34px, 5vw, 64px); line-height: 1.14; font-weight: 900;
+       letter-spacing: -.035em; color: var(--navy); max-width: 14em; }
+  h1 b { color: var(--accent-ink); }
+  .lead { font-size: clamp(15px, 1.6vw, 20px); line-height: 1.7; color: var(--ink-soft); max-width: 34em; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 34px 0 56px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px;
+         font-weight: 700; text-decoration: none; font-size: 15px; }
+  .btn--primary { background: var(--navy); color: #fff; }
+  .btn--ghost { border: 1px solid var(--card-line); color: var(--navy); background: #fff; }
+  .btn:hover { text-decoration: none; opacity: .9; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+  .card { padding: 22px 24px; border: 1px solid var(--card-line); border-radius: 14px; background: var(--card); }
+  .card h3 { margin: 0 0 8px; font-size: 17px; color: var(--navy); }
+  .card p { margin: 0; font-size: 14px; line-height: 1.7; color: var(--muted); }
+  .shot { margin: 56px 0 0; border: 1px solid var(--card-line); border-radius: 16px; overflow: hidden;
+          box-shadow: 0 18px 50px rgba(16,26,61,.14); }
+  .shot img { display: block; width: 100%; }
+  footer { margin-top: 56px; font-size: 13px; color: var(--faint); }
+  footer a { color: var(--accent-ink); }
+</style>
+</head>
+<body class="landing">
+<div class="wrap">
+  <div class="kicker">PaperGaki · Slides Kit</div>
+  <h1>読ませず、<b>見せる</b>スライド</h1>
+  <p class="lead">
+    論文1本を8枚の日本語スライドに落とすための最小キット。1920×1080の固定ステージ、
+    1枚1メッセージ、図表か動画を必ず1つ。依存パッケージもビルドもありません。
+  </p>
+  <div class="cta">
+    <a class="btn btn--primary" href="examples/index.html">デモを見る →</a>
+    <a class="btn btn--ghost" href="https://github.com/Wataru823/papergaki-slides-kit">GitHub</a>
+    <a class="btn btn--ghost" href="https://github.com/Wataru823/papergaki-slides-kit/blob/main/DESIGN.md">設計の根拠</a>
+  </div>
+
+  <div class="grid3">
+    <div class="card"><h3>固定ステージ</h3><p>1920×1080 を作って拡大縮小。画面幅で文字サイズも改行も変わらない。</p></div>
+    <div class="card"><h3>1枚1メッセージ</h3><p>箇条書きは3項目・各40文字まで。溢れたら縮めずに2枚へ分ける。</p></div>
+    <div class="card"><h3>図表を必ず1つ</h3><p>文字だけのスライドを作らない。横長の図は全幅の帯に自動で回る。</p></div>
+  </div>
+
+  <div class="shot"><img src="docs/example-method.jpg" alt="スライドの例"></div>
+
+  <footer>
+    実用例: <a href="https://wataru823.github.io/papergaki-slides/">papergaki-slides</a> ／
+    参考: 伝わるデザイン, frontend-slides ／ MIT
+  </footer>
+</div>
+</body>
+</html>
