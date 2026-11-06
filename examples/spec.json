@@ -2,7 +2,7 @@
   "page_title": "伝わるスライドの作り方 — Paper Auto Slides Kit",
   "brand": "Paper Auto Slides Kit",
   "cover": {
-    "kicker": "PAPERGAKI · SLIDES KIT",
+    "kicker": "PAPER AUTO SLIDES · KIT",
     "title": "読ませず、**見せる**スライド",
     "lead": "論文1本を8枚に圧縮するときに効いた、レイアウトと情報量の決めごと。",
     "subtitle": "HTML 1枚で完結するスライドキットの設計メモ",
@@ -11,7 +11,7 @@
       "依存なし",
       "日本語"
     ],
-    "image": "../docs/example-results.jpg"
+    "image": "../docs/example-idea.jpg"
   },
   "slides": [
     {
